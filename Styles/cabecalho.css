@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container_botao:checked~.container_rotulo > .cabecalho_menu-hamburguer{
+    background-image: url(/Assets/Menu\ Aberto.svg);
+}
+
+.container_botao:checked~.container_rotulo{
+    background-color: #001e5a;
+}
+
 .cabecalho{
     background-color: #ffffff;
     display: flex;
@@ -53,3 +61,12 @@
 .container_botao{
     display: none;
 } 
+
+.lista-menu_item:hover{
+    background-color: #00afef;
+}
+
+.lista-menu_item:hover > .lista-menu_link{
+    -webkit-text-fill-color: #ffffff;
+    text-decoration: none;
+}
