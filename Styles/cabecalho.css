@@ -36,7 +36,7 @@
  .lista-menu{
     display: none;
     position: absolute;
-    top: 10%;
+    top: 8.5%;
     width: 60vw;
 }
 
@@ -64,9 +64,17 @@
 
 .lista-menu_item:hover{
     background-color: #00afef;
+    transform: scale(1.01);
+    transition: 200ms linear;
 }
 
 .lista-menu_item:hover > .lista-menu_link{
     -webkit-text-fill-color: #ffffff;
     text-decoration: none;
+}
+
+@media (min-width: 650px){
+    .lista-menu{
+        top: 12.5%;
+    }
 }

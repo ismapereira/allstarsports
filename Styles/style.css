@@ -69,8 +69,24 @@
     font-size: 1.25rem;
   }
 
+  .subtitulo_principal{
+    font-family: "K2D", sans-serif;
+    font-size: 1.8rem;
+    color: #00afef;
+  }
+
+  .subtitulo_secundario{
+    font-family: "K2D", sans-serif;
+    font-size: 1.25rem;
+    color: #00afef;
+    text-decoration: underline;
+  }
+
   .botao:hover{
     background-color: #00afef;
+    border-color: #00afef;
+    transform: scale(1.1);
+    transition: 200ms linear;
   }
 
   .rodape{
