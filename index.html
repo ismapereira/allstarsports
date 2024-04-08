@@ -4,55 +4,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AllStar Sports</title>
-    <link rel="stylesheet" href="./Styles/reset.css">
-    <link rel="stylesheet" href="./Styles/style.css">
-    <link rel="icon" type="image/x-icon" href="./Assets/logocorunica.png">
+    <link rel="stylesheet" href="/Styles/style.css">
+
+    <!-- ADIÇÃO DOS BOX ICONS -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 <body>
+
+    <!-- Construção do HEADER -->
+
     <header class="cabecalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container_botao">
-            <label for="menu" class="container_rotulo">
-                <span class="cabecalho_menu-hamburguer container_imagem"></span> 
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu_item"><a href="/index.html" class="lista-menu_link">Home</a></li>
-                <li class="lista-menu_item"><a href="/about.html" class="lista-menu_link">Sobre nós</a></li>
-                <li class="lista-menu_item"><a href="/cuidados.html" class="lista-menu_link">Cuidados com o manto</a></li>
-                <li class="lista-menu_item"><a href="/atacado.html" class="lista-menu_link">Atacado</a></li>
-                <li class="lista-menu_item"><a href="/entrega.html" class="lista-menu_link">Política de entrega</a></li>
-                <li class="lista-menu_item"><a href="/trocas.html" class="lista-menu_link">Trocas e devoluções</a></li>
-                <li class="lista-menu_item"><a href="https://docs.google.com/document/d/1UWhBYEKNgHLGTJwA_RYU9WpCtRvELtbjgNDIf7aUk-k/edit#heading=h.oc21qaqm6qbm" class="lista-menu_link">Política de privacidade</a></li>
-            </ul>
-        </div>
+        <a href="#home" class="logo">AllStar Sports<span class="animar" style="--i:1"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animar" style="--i:2"></span></div>
+        
+        <nav class="menunav">
+            <a href="#home" class="ativado">Home</a>
+            <a href="#about">Quem somos</a>
+            <a href="#cuidados">Cuidados</a>
+            <a href="#atacado">Atacado</a>
+            <a href="#entrega">Entrega</a>
+
+            <span class="active-nav"></span>
+            <span class="animar" style="--i:2"></span>
+        </nav>
     </header>
-    <main class="conteudo">
-        <section class="apresentacao">
-            <h1 class="titulo">Adquira o manto do seu time aqui na <strong class="destaque">AllStar Sports</strong></h1>
-            <p class="paragrafo">Os melhores mantos você encontra aqui. Vista-se com paixão, torça com estilo!</p>
-            <div class="card">
-                <div class="card_descricao">
-                    <div class="descricao">
-                        <h3 class="descricao_titulo">Já pensou em ganhar uma renda extra?</h3>
-                        <h2 class="descricao_titulo-chamada">Confira nossos preços para atacado</h2>
-                        <p class="descricao_texto">Conquiste sua independência financeira vendendo camisas de futebol, clique em SAIBA MAIS e confira nossos preços</p>
-                    </div>
+
+    <!-- Construção do MAIN -->
+
+        <!-- Construção da HOME -->
+
+        <section class="home mostrar-animar" id="home">
+            <div class="home_conteudo">
+                <h1>Olá! Seja bem vindo a <span>AllStar Sports</span><span class="animar" style="--i:2"></span></h1>
+                <div class="subtitulo_home">
+                    <h3>Os melhores mantos você encontra aqui!</h3>
+                    <span class="animar" style="--i:3"></span>
                 </div>
-                <div class="card_botoes">
-                    <a href="/atacado.html" class="botoes_ancora">Saiba mais</a>
+                <p>Adquira já o seu manto e vista-se como um verdadeiro AllStar. Aqui você encontra os melhores preços e qualidade de excelência. Vista-se com paixão, torça com estilo!
+                    <span class="animar" style="--i:4"></span>
+                </p>
+
+                <div class="btn-box">
+                    <a href="https://drive.google.com/drive/folders/bc1qf92drq0wwm8w7rnw9d8p4wjvaut2csdd5sg2cx?usp=drive_link" class="btn">Catálogo</a>
+                    <a href="https://wa.me/message/G2A2QN56VJQOB1" class="btn">Vamos conversar</a>
+                    <span class="animar" style="--i:5"></span>
                 </div>
             </div>
-            <div class="botoes">
-                <h2 class="subtitulo">Catálogo e meios de contato:</h2>
-                    <a class="botao" href="https://drive.google.com/drive/folders/1zmbQiDJcKqMl2xYx6EPJK1f5hyLzmTH2?usp=drive_link"><img src="./Assets/catalogo.png">Catálogo</a>
-                    <a class="botao" href="https://www.instagram.com/allstar.sportsbr/"><img src="./Assets/instagram.png">Instagram</a>
-                    <a class="botao" href="https://wa.me/message/G2A2QN56VJQOB1"><img src="./Assets/whats.png">WhatsApp</a>          
+
+            <div class="home-redes">
+                <a href="https://www.instagram.com/allstar.sportsbr/"><i class='bx bxl-instagram' ></i></a>
+                <!-- <a href="#"><i class='bx bxl-whatsapp'></i></a> -->
+                <span class="animar" style="--i:6"></span>
+            </div>
+
+            <div class="home-imghover"></div>
+            <span class="animar home-imagem" style="--i:7"></span>
+        </section>
+
+        <!-- Construção do ABOUT -->
+
+        <section class="about" id="about">
+            <h2 class="header-conteudo-geral">Quem <span>somos</span><span class="animar scroll" style="--i:1"></span></h2>
+
+            <div class="about-img">
+                <img src="/Assets/about.png" alt="">
+                <span class="circulo-giro"></span>
+                <span class="animar scroll" style="--i:2"></span>
+            </div>
+
+            <div class="about-conteudo">
+                <h3>Conheça um pouco sobre nós!<span class="animar scroll" style="--i:3"></span></h3>
+                <p>A AllStar Sports nasceu da paixão pelo esporte e com isso buscamos apresentar um novo conceito para os amantes do futebol e do basquete. Acreditamos que uma camisa não é apenas uma peça de roupa, mas uma identidade e uma forma de expressar o amor pelo seu time. Cada uma de nossas peças é selecionada para garantir a mais alta qualidade e nos empenhamos em fornecer as melhores marcas com qualidade Premium e preço acessível, dessa forma garantimos que você se vista como um verdadeiro All-Star. Nossa loja preza pela boa assessoria ao cliente no processo de compra, nossos canais de atendimento, seja através do nosso e-mail ou Whatsapp, procuramos responder no menor tempo possível e solucionar todas as dúvidas do cliente. Com uma equipe dedicada, estamos dispostos a oferecer uma ampla variedade de camisas personalizáveis, desde o clássico ao contemporâneo, tudo isso para que você possa exibir com orgulho as cores do seu time.
+                    <span class="animar scroll" style="--i:4"></span>
+                </p>
             </div>
         </section>
-        <img class="logo" src="./Assets/logodegrade.png">
-    </main>
+
+        <!-- Construção do CUIDADOS -->
+
+        <section class="cuidados" id="cuidados">
+            <h2 class="header-conteudo-geral">Cuidados com <span>o manto</span><span class="animar scroll" style="--i:1"></span></h2>
+            
+            <div class="cuidados-linha">
+                
+                <!-- Coluna 1 -->
+
+                <div class="cuidados-coluna">
+                    <h3 class="titulo-cuidados">Cuidados importantes<span class="animar scroll" style="--i:2"></span></h3>
+
+                    <div class="cuidados-box">
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo">
+                                <div class="check"><i class='bx bx-list-check'></i> Cuidado #1</div>
+                                <h3>Lavagem do manto</h3>
+                                <p>Lavar as camisas sempre à mão, com detergente neutro ou sabão em barra neutro</p>
+                            </div>
+                        </div>
+
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo">
+                                <div class="check"><i class='bx bx-list-check'></i> Cuidado #2</div>
+                                <h3>Lavagem do manto</h3>
+                                <p>Nunca utilize máquina de lavar, de secar ou lavagem a seco</p>
+                            </div>
+                        </div>
+
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo">
+                                <div class="check"><i class='bx bx-list-check'></i> Cuidado #3</div>
+                                <h3>Lavagem do manto</h3>
+                                <p>Não deixe a sua camisa de molho</p>
+                            </div>
+                        </div>
+
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo">
+                                <div class="check"><i class='bx bx-list-check'></i> Cuidado #4</div>
+                                <h3>Lavagem do manto</h3>
+                                <p>Nunca usar alvejantes (cloro, vanish e água sanitária), amaciante e sabão em pó</p>
+                            </div>
+                        </div>
+
+                        <span class="animar scroll" style="--i:3"></span>
+                    </div>
+                </div>
+
+                <!-- Coluna 2 -->
+
+                <div class="cuidados-coluna">
+                    <h3 class="titulo-cuidados">Cuidados importantes<span class="animar scroll" style="--i:5"></span></h3>
+                        <div class="cuidados-box">
+
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo">
+                                        <div class="check"><i class='bx bx-list-check'></i> Cuidado #5</div>
+                                    <h3>Lavagem do manto</h3>
+                                    <p>Nunca esfregue as partes com patrocínio ou personalização</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo">
+                                    <div class="check"><i class='bx bx-list-check'></i> Cuidado #6</div>
+                                    <h3>Lavagem do manto</h3>
+                                    <p>Tire o excesso de água e não torça</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo">
+                                    <div class="check"><i class='bx bx-list-check'></i> Cuidado #7</div>
+                                    <h3>Secagem do manto</h3>
+                                    <p>Seque as peças sempre à sombra, e na hora de guardar prefira guardar suas camisas em cabides</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo">
+                                    <div class="check"><i class='bx bx-list-check'></i> Cuidado #8</div>
+                                    <h3>Passar ferro no manto</h3>
+                                    <p>Não recomendamos o uso do ferro de passar, prefira um vaporizador ou caso precise passar com o ferro coloque sua camisa do lado avesso e não deixe o ferro muito quente, você também pode colocar um pano por cima para o ferro não entrar em contato com a camisa e acabar queimando</p>
+                                </div>
+                            </div>
+
+                            <span class="animar scroll" style="--i:6"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Construção do ATACADO -->
+
+        <section class="atacado" id="atacado">
+            <h2 class="header-conteudo-geral">Seja um <span>revendedor</span><span class="animar scroll" style="--i:1"></span></h2>
+            <div class="about-conteudo">
+                <h3>Conheça os nossos valores<span class="animar scroll" style="--i:2"></span></h3>
+            </div>
+
+            <div class="cuidados-linha atacado-linha">
+                
+                <!-- Coluna 1 -->
+
+                <div class="cuidados-coluna">
+
+                    <div class="cuidados-box">
+
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo conteudo-atacado">
+                                <div class="check"><i class='bx bxs-t-shirt'></i>04 a 05 camisas</div>
+                                <h3>Valor: R$ 75,00 cada</h3>
+                            </div>
+                        </div>
+
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo conteudo-atacado">
+                                <div class="check"><i class='bx bxs-t-shirt'></i>06 a 09 camisas</div>
+                                <h3>Valor: R$ 70,00 cada</h3>
+                            </div>
+                        </div>
+
+                        <div class="cuidados-conteudo">
+                            <div class="conteudo conteudo-atacado">
+                                <div class="check"><i class='bx bxs-t-shirt'></i>10 a 29 camisas</div>
+                                <h3>Valor: R$ 65,00 cada</h3>
+                            </div>
+                        </div>
+
+                        <span class="animar scroll" style="--i:3"></span>
+                    </div>
+
+                </div>
+
+                <!-- Coluna 2 -->
+
+                <div class="cuidados-coluna">
+
+                        <div class="cuidados-box">
+
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo conteudo-atacado">
+                                    <div class="check"><i class='bx bxs-t-shirt'></i>30 a 59 camisas</div>
+                                    <h3>Valor: R$ 64,00 cada</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo conteudo-atacado">
+                                    <div class="check"><i class='bx bxs-t-shirt'></i>60 a 79 camisas</div>
+                                    <h3>Valor: R$ 63,00 cada</h3>
+                                </div>
+                            </div>   
+                            
+                            <div class="cuidados-conteudo">
+                                <div class="conteudo conteudo-atacado">
+                                    <div class="check"><i class='bx bxs-t-shirt'></i>80 a 100 camisas</div>
+                                    <h3>Valor: R$ 62,00 cada</h3>
+                                </div>
+                            </div>
+                            
+                            <span class="animar scroll" style="--i:4"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lista-atacado">
+                <ul>
+                    <li>Tamanho 2XL: +R$ 6,00</li>
+                    <li>Tamanho 3XL: +R$ 12,00 (verificar disponibilidade)</li>
+                    <li>Personalização: +R$ 20,00</li>
+                    <li>Patch: +R$ 10,00</li>
+                    <li>Seguro: +R$ 5,00 cada peça (OPCIONAL)  
+                        <p>Caso seu produto seja taxado ou extraviado, a equipe da AllStar Sports é a responsável legal pelo pagamento</p>
+                    </li>
+                    <br>
+                    <p class="texto-atacado">Valor para ATACADO - Podendo mesclar com outros produtos:</p>
+                    <br>
+                    <li>NBA: R$ 130,00</li>
+                    <li>Retrô (Futebol): R$ 110,00</li>
+                </ul>
+                
+                <p class="texto-atacado-final">Frete grátis para todo Brasil</p>
+
+                <span class="animar scroll" style="--i:6"></span>
+            </div>
+            
+
+        </section>
+
+        <!-- Construção da ENTREGA -->
+
+        <section class="entrega" id="entrega">
+
+            <h2 class="header-conteudo-geral">Política de <span>entrega</span><span class="animar scroll" style="--i:1"></span></h2>
+            <div class="about-conteudo">
+                <h3>Conheça os nossos prazos e como funcionam nossas entregas<span class="animar scroll" style="--i:2"></span></h3>
+            </div>
+
+            <div class="container-conteudo">
+
+                <div class="fsa">
+                    <h4>Para Feira de Santana/BA:</h4>
+                    <p class="subtitulo_entrega">Atacado - Envio convencional SEM SEGURO <i class='bx bx-chevrons-down'></i></p>
+                    <p>O nosso prazo atual de entrega é estimado de 15 a 40 dias úteis após o envio da mercadoria.<br><span class="detalhes">*Caso seu produto seja taxado, a equipe da AllStar Sports NÃO é a responsável legal pelo pagamento</span></p>
+                    <br>
+                    <p class="subtitulo_entrega">Atacado - Envio expresso COM SEGURO <i class='bx bx-chevrons-down'></i></p> 
+                    <p>+R$ 5,00 por peça - Via Shopee - O nosso prazo atual de entrega é estimado de 10 a 20 dias úteis após o envio da mercadoria.<br><span class="detalhes">*Um envio sem risco de taxação ou despesas futuras</span></p>
+                </div>
+                
+                <div class="demais-localidades">
+                    <h4>Para demais localidades:</h4>
+                    <p class="subtitulo_entrega">Atacado - Envio convencional SEM SEGURO <i class='bx bx-chevrons-down'></i></p>
+                    <p>O nosso prazo atual de entrega é estimado de 20 a 45 dias úteis após o envio da mercadoria.<br><span class="detalhes">*Caso seu produto seja taxado, a equipe da AllStar Sports NÃO é a responsável legal pelo pagamento</span></p>
+                    <br>
+                    <p class="subtitulo_entrega">Atacado - Envio expresso COM SEGURO <i class='bx bx-chevrons-down'></i></p>
+                    <p>+R$ 5,00 por peça - Via Shopee - O nosso prazo atual de entrega é estimado de 10 a 20 dias úteis após o envio da mercadoria.<br><span class="detalhes">*Um envio sem risco de taxação ou despesas futuras</span></p>
+                </div>
+
+                <span class="animar scroll" style="--i:4"></span>
+            </div>
+                
+        </section>
+
+    <!-- Construção do FOOTER -->
+    
     <footer class="rodape">
-        <p>Desenvolvido por Ismael Pereira</p>
-    </footer>
+        <div class="texto-rodape">
+            <p>Copyright &copy; 2024 - Ismael Pereira | Todos os direitos reservados.</p>
+
+            <!-- <span class="animar scroll" style="--i:1"></span> -->
+        </div>
+
+        <div class="rodape-subir">
+            <a href="#"><i class='bx bxs-chevrons-up'></i></a>
+
+            <!-- <span class="animar scroll" style="--i:3"></span> -->
+        </div>
+    </footer>    
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
